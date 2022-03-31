@@ -1,0 +1,146 @@
+html{
+    scroll-behavior: smooth;
+
+}
+*{
+    padding: 0; margin: 0; box-sizing: border-box;
+}
+body{
+    background-color: rgba(4, 0, 255, 0.432); font-family: 'poppins',sans-serif;
+}
+header{
+
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h2{
+    color: white;
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    margin: 1.0rem 0;
+}
+header p{
+    color: white;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.container{
+    width: 100%;
+    min-height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
+    gap: 1rem;
+    grid-template-areas:"profile profile skills skills"
+                        "edu edu edu lang"
+                        "cont exp exp exp"
+                        "footer footer footer footer";
+padding: 3rem;
+
+}
+.profile{
+    background-color: white;
+    color:#3c6382;
+    padding: 2rem;
+    grid-area: profile;
+    
+    font-size: 1rem;
+}
+
+.skills{
+
+    background-color: #3c6382;
+    color: white;
+    padding: 2rem;
+
+    font-size: 1rem;
+    grid-area: skills;
+    
+
+}
+.edu{
+    background-color:#3c6382;
+    color: white;
+    padding: 2rem;
+    grid-area: edu;
+
+}
+.lang{
+    background-color:white;
+    color: #3c6382;
+    padding: 2rem;
+    grid-area: lang;
+
+}
+.cont{
+    background-color: white;
+    color: #3c6382;
+    padding: 2rem;
+    grid-area: cont;
+
+}
+.exp{
+    background-color: #3c6382;
+    color: white;
+    padding: 2rem;
+    grid-area: exp;
+
+}
+ .container .profile h3{
+     margin-bottom: 1rem;
+ }
+ .profile p{
+     padding:0.3rem 2rem ;
+     text-align: justify;
+     line-height: 2.2rem;
+ }
+ .skills div{
+     width: 100%;
+     padding: 0.1
+     rem 1rem;
+
+ }
+ .skills div progress[value]{
+     width: 100%;
+     height: 0.5rem;
+
+ }
+ .edu h2{
+     letter-spacing: 0.2rem;
+ }
+ .edu p{
+     padding: 0.3rem 1rem;
+     text-align: justify;
+     line-height: 2.2rem;
+ }
+ .edu a{
+     text-decoration: none;
+     padding: 1rem ;
+     background: white;
+     color: rgb(70, 21, 21);
+     border-radius: 2rem;
+ }
+ .lang ul{
+     cursor: pointer;
+     margin: 1rem 0;
+     padding: 0.3rem 1rem;
+     font-size: 1.2rem;
+     font-weight: bold;
+ }
+
+ .cont p{
+     padding: 0.3rem 1rem;
+     margin: 1rem 0;
+ }
+ .exp h2{
+     font-size: 1.2rem;
+ }
+ .exp p{
+     margin: 1rem 0;
+     line-height: 2.2rem;
+ }
